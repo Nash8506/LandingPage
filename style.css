@@ -1,0 +1,194 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hero Section Styling */
+.hero {
+    height: 100vh;
+    background: url('https://as1.ftcdn.net/v2/jpg/10/50/95/42/1000_F_1050954218_emIA6fcon8gsKfoYLkPvuBgsC9wibpv6.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+/* Features Section Styling */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 1rem;
+    background-color: #f4f4f4;
+}
+
+.feature-item {
+    flex: 1;
+    margin: 0 1rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Responsive Layout for Features Section */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item {
+        margin-bottom: 1.5rem;
+        width: 80%;
+    }
+}
+
+/* Testimonials Section Styling */
+.testimonials {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 1rem;
+    background-color: #e9ecef;
+}
+
+.testimonial-item {
+    flex: 1;
+    max-width: 45%;
+    margin: 0 1rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.testimonial-item p {
+    font-size: 1.1rem;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.testimonial-item h3 {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Responsive Layout for Testimonials Section */
+@media (max-width: 768px) {
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-item {
+        max-width: 80%;
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Footer Section Styling */
+.footer {
+    padding: 1.5rem;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #007bff; /* Hover color */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px); /* Move up from below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End position */
+    }
+}
+
+/* Initial state for elements with fade-in */
+.fade-in {
+    opacity: 0; /* Start invisible */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
